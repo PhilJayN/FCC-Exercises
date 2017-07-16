@@ -12,6 +12,7 @@ function palindrome (str) {
 }
 palindrome("eye");
 
+
 function factorialize(num) {
   var result = 1; ///result set as 1, due to multiplcation problem. if set as 0, you won't get far with solution.
   for (var i = 1; i <= num; i++ ) {
@@ -20,3 +21,15 @@ function factorialize(num) {
   return result;
 }
 factorialize(3);
+
+
+function longestWord(str) {
+  var arr, max = 0;
+  arr = str.split(' ');
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i].length > max) {
+      max = arr[i].length;
+    }
+  }
+}
+longestWord('I like cakes');
