@@ -11,3 +11,12 @@ function palindrome (str) {
   return editedStr === editedStr.split('').reverse().join(''); ///with an empty string (and therefore eliminating that).
 }
 palindrome("eye");
+
+function factorialize(num) {
+  var result = 1; ///result set as 1, due to multiplcation problem. if set as 0, you won't get far with solution.
+  for (var i = 1; i <= num; i++ ) {
+    result = result * i; ///result is assigned itself, and multiply it (result) by a new iteration val. so it goes: 1*1*2*3*4... and so on.
+  }
+  return result;
+}
+factorialize(3);
